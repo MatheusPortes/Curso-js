@@ -21,3 +21,42 @@ const exibirDadosClienteVariaveis = () => {
 }
 
 exibirDadosClienteVariaveis()
+
+// Item 11
+var array = ["Matheus", 1500, "14/10/1996", true]
+
+const exibirDadosClienteArray = (array) => {  // iterator interador resebe o valor da variavel array
+    for (const iterator of array) {
+        console.log("Valor: ", iterator)
+    }
+}
+
+//exibirDadosClienteArray(array)
+
+
+// Item 12
+
+var object = {
+    nomeCliente: "MAtheus",
+    renda: 1500,
+    dataNacimento: "14-10-1996",
+    ativo: true
+}
+
+const exibirDadosClienteObject = (object) => { // iterator resebe o index do object
+    for (const iterator in object) {
+        console.log(object)
+    }
+}
+
+//exibirDadosClienteObject(object)
+
+// Item 13
+
+const data = new Date(14,10,1996);
+
+const retornaDataAtualFormatada = (data) => {
+    console.log(data)
+}
+
+retornaDataAtualFormatada(data)
